@@ -1,0 +1,39 @@
+#colonneNom
+{
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+
+#colonnePrenom
+{
+	width: 30%;
+	float: left;
+	text-align: center;
+	
+	margin-left: 20%;
+}
+
+.gestionNom
+{
+	width: 30%;
+}
+
+.gestionPrenom
+{
+	width: 30%;
+	
+	margin-left: 20%;
+}
+
+.supprimerEleve
+{
+	cursor: pointer;
+}
+
+#valider
+{
+	margin: auto;
+	border: 1px solid black;
+	width: 40%;
+}

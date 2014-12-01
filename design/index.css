@@ -1,0 +1,53 @@
+#menu
+{
+	width: 800px;
+	margin: auto;
+	
+	margin-top: 50px;
+}
+
+#menuEnseignants
+{
+	width: 800px;
+	margin: auto;
+}
+
+#menuAdmin
+{
+	width: 800px;
+	margin: auto;
+}
+
+
+.bouton
+{	
+	width: 300px;
+	height: 100px;
+	
+	border: 1px solid black;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	
+	background-color: white;
+	
+	text-align: center;
+	color: black;
+	font-size: 24pt;
+	
+	float: left;
+	
+	margin-left: 50px;
+	margin-bottom: 10px;
+	
+	cursor: pointer;
+}
+
+.bouton a
+{
+	color: blue;
+}
+
+#administration
+{
+	width: 650px;
+}

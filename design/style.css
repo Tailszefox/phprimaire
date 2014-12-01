@@ -1,0 +1,209 @@
+/* Style commun à toutes les pages */
+
+/* Général */
+
+body
+{
+	background-color: #F5F5F5;
+	font-family: Arial, serif;
+	color: black;
+}
+
+a
+{
+	text-decoration: none;
+	color: #0000BB;
+}
+
+a:visited
+{
+	color: #0000BB;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.hidden
+{
+	display: none;
+}
+
+/* Menu supérieur */
+
+#menuTop
+{
+	background-color: black;
+	color: white;
+	
+	height: 21px;
+	
+	position: fixed;
+	right: 0px;
+	top: 0px;
+}
+
+#menuTop p
+{
+	margin: 3px;
+}
+
+#menuTop a
+{
+	color: white;
+}
+
+#menuTop #menuTopMontrer
+{
+	float: left;
+	padding-right: 3px;
+	padding-left: 3px;
+	margin-right: 3px;
+	
+	background-color: blue;
+	border: 1px solid blue;
+	
+	cursor: pointer;
+}
+
+#menuTop .menuTopLien
+{
+	cursor: pointer;
+}
+
+#menuTop #menuTopElements
+{
+	float: left;
+	margin-right: 3px;
+	display: none;
+}
+
+/* Titre */
+
+#titre
+{	
+	margin: auto;
+	width: 60%;
+	
+	background-color: white;
+	border: 1px solid black;
+	
+	text-align: center;
+}
+
+#titre p
+{
+	margin: 5px;
+}
+
+#titre #titreNom
+{
+	font-size: 8pt;
+}
+
+#titre #titreSection
+{
+	font-size: 12pt;
+}
+
+#titre #lienRetour
+{
+	position: absolute;
+	top: 15px;
+}
+
+/* Corps */
+
+#corps
+{
+	margin-top: 10px;
+}
+
+/* Footer */
+
+#projet
+{
+	position: fixed;
+	
+	background-color: white;
+	bottom: 0px;
+	right: 0px;
+}
+
+#projet p
+{
+	margin: 2px;
+	font-size: 8pt;
+}
+
+/* Dialog de connexion */
+
+#fondConnexion
+{
+	/* Background noir transparent */
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	
+	width: 100%;
+	height: 100%;
+	
+	top: 0px;
+	left: 0px;
+}
+
+#divConnexion
+{
+	background-color: #F5F5F5;
+	position: fixed;
+	
+	width: 70%;
+	height: 70%;
+	
+	top: 15%;
+	left: 15%;
+	
+	margin: auto;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#fermerConnexion
+{
+	width: 30px;
+	height: 30px;
+	
+	background-color: white;
+	border: 2px solid black;
+	
+	position: fixed;
+	
+	top: 13%;
+	right: 14%;
+	
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	
+	font-size: 15pt;
+}
+
+#boutonFermerConnexion
+{
+	position: relative;
+	
+	left: 8px;
+	top: 3px;
+	
+	cursor: pointer; 
+}
+
+#passwordProf, #passwordProfSubmit
+{
+	width: 200px;
+}

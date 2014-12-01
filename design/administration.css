@@ -1,0 +1,41 @@
+input
+{
+	border: 1px solid black;
+	text-align: center;
+}
+
+.submit
+{
+	width: 40%;
+	margin-top: 10px;
+}
+
+.boutonEditer
+{
+	width: 20%;
+}
+
+.explication
+{
+	font-size: small;
+	font-style: italic;
+}
+
+#nomEcoleChamp
+{
+	text-align: center;
+	width: 200px;
+}
+
+.editer, .supprimer
+{
+	cursor: pointer;
+}
+
+h2
+{
+	margin: auto;
+	width: 70%;
+	background-color: white;
+	border: 2px solid black;
+}

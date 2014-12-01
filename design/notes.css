@@ -1,0 +1,84 @@
+input
+{
+	border: 1px solid black;
+	
+	text-align: center;
+}
+
+.submit
+{
+	width: 40%;
+	margin-top: 10px;
+}
+
+.divIntitule
+{
+	text-align: center;
+	float: left;
+	width: 20%;
+	
+	margin-left: 30%;
+}
+
+.divCoefficient
+{
+	text-align: center;
+	float: left;
+	width: 10%;
+	margin-left: 10%;
+	margin-right: 20%;
+}
+
+.editer
+{
+	cursor: pointer;
+}
+
+.supprimer
+{
+	cursor: pointer;
+}
+
+.boutonEditer
+{
+	width: 20%;
+}
+
+#titreEpreuve, #coefficientEpreuve
+{
+	width: 100%
+}
+
+#paragrapheGenerer
+{
+	margin: auto;
+	width: 500px;
+	height: 50px;
+	background-color: lightgray;
+	border: 1px solid black;
+	cursor: pointer;
+	
+	text-align: center;
+	font-size: 22pt;
+	padding-top: 20px;
+}
+
+.nomPrenomConsulter
+{
+	text-align: right;
+	width: 50%;
+	float: left;
+}
+
+.noteConsulter
+{
+	margin-left: 5%;
+	
+	float: left;
+	width: 45%;
+}
+
+.noteEleve
+{
+	width: 40px;
+}

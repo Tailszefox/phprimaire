@@ -1,0 +1,47 @@
+a img
+{
+	border: 0px none;
+}
+
+input
+{
+	border: 1px solid black;
+	width: 40%;
+}
+
+textarea
+{
+	border: 1px solid black;
+	width: 40%;
+	height: 100px;
+}
+
+.editer
+{
+	cursor: pointer;
+}
+
+.supprimer
+{
+	cursor: pointer;
+}
+
+.editergal
+{
+	cursor: pointer;
+}
+
+.deconnectergal
+{
+	cursor: pointer;
+}
+
+.supprimergal
+{
+	cursor: pointer;
+}
+
+.boutonEditer
+{
+	width: 20%;
+}

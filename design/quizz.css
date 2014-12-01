@@ -1,0 +1,146 @@
+.explication
+{
+	font-size: small;
+	font-style: italic;
+}
+
+#minuteQuizz, #secondeQuizz
+{
+	width: 50px;
+	text-align: center;
+}
+
+.supprimer, .editer
+{
+	cursor: pointer;
+}
+
+#formulaireQuestion
+{
+	width: 300px;
+}
+
+#formulaireImage
+{
+	width: 400px;
+}
+
+.choixQuizz
+{
+	width: 200px;
+}
+
+.submit
+{
+	border: 1px solid black;
+	text-align: center;
+	width: 40%;
+	margin-top: 10px;
+}
+
+.boutonEditer
+{
+	width: 20%;
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 10px;
+}
+
+h3
+{
+	margin: auto;
+	width: 70%;
+	background-color: white;
+	border: 2px solid black;
+}
+
+.uneQuestion
+{
+	margin: auto;
+	margin-bottom: 20px;
+	width: 60%;
+	
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.quizzRepondreCase
+{
+	width: 50%;
+	float: left;
+	text-align: right;
+	margin: 0px;
+}
+
+.quizzRepondreReponse
+{
+	text-align: left;
+	float: left;
+	width: 45%;
+	margin: 0px;
+	margin-left: 10px;
+}
+
+label
+{
+	cursor: pointer;
+}
+
+.quizzRepondreImage
+{
+	float: left;
+	width: 30%;
+}
+
+.uneQuestionMoitie
+{
+	float: left;
+	width: 70%;
+}
+
+.quizzRepondreImageImage
+{
+	width: 100%;
+	height: auto;
+}
+
+.clear
+{
+	margin-top: 5px;
+}
+
+#quizzRepondreValider
+{
+	border: 1px solid black;
+	text-align: center;
+	width: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#tempsRestant
+{
+	background-color: black;
+	color: white;
+	padding: 5px;
+	margin: 0px;
+	
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+#tempsRestantTemps
+{
+	font-weight: bold;
+}
+
+.rouge
+{
+	color: red;
+}
+
+.cache
+{
+	visibility: hidden;
+}

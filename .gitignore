@@ -1,0 +1,11 @@
+# Fichier de config
+/include/include_parametres.php
+
+# fpdf
+/include/fpdf16/
+
+# Exemples SQL
+/*.sql
+
+# Cache des templates Smarty
+/templates_c/

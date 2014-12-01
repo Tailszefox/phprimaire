@@ -1,0 +1,23 @@
+.explication
+{
+	font-size: small;
+	font-style: italic;
+}
+
+#adresseLien
+{
+	width: 300px;
+}
+
+#imageLien
+{
+	width: 300px;
+}
+
+h3
+{
+	width: 50%;
+	border: 1px solid black;
+	background-color: white;
+	margin: auto;
+}
