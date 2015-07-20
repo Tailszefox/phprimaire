@@ -10,3 +10,5 @@ Il permet la gestion d'une école primaire (élèves, professeurs, notes) et don
 Le projet utilise le moteur de template Smarty.
 
 Une version de démo est accessible à l'adresse http://tailszefox.no-ip.com/projetL3/new/ .
+
+*Note d'installation* : Renommer *include/include_parametres.php.example* en *include/include_parametres.php* et accéder à l'index pour lancer l'installation.

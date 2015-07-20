@@ -1,0 +1,8 @@
+<?php
+	$nomEcole = 'École Example';
+	$db_adresse = 'localhost';
+	$db_user = 'username';
+	$db_password = 'password';
+	$db_nom = 'phprim';
+	$installed = '0';
+?>
