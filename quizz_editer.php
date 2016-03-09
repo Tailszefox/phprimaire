@@ -32,13 +32,15 @@ if(isset($_POST['editerQuizz']))
 elseif(isset($_POST['ajouterQuestion']))
 {
 	$question = protect(array($_POST['question'], $_POST['image'], $_POST['choix1'], $_POST['choix2'], $_POST['choix3'], $_POST['choix4']));
+
+	$responsesCorrectes = implode(protect($_POST['formulaireCorrect']));
 	
 	// Mise à jour d'une question
 	if(is_numeric($_POST['formulaireIdQuestion']))	
-		UpdateQuery('UPDATE QUESTIONS SET QU_question = "'.$question[0].'", QU_photo = "'.$question[1].'", QU_choix1 = "'.$question[2].'", QU_choix2 = "'.$question[3].'", QU_choix3 = "'.$question[4].'", QU_choix4 = "'.$question[5].'", QU_correct = '.$_POST['formulaireCorrect'].' WHERE QU_id = '.$_POST['formulaireIdQuestion'].'');
+		UpdateQuery('UPDATE QUESTIONS SET QU_question = "'.$question[0].'", QU_photo = "'.$question[1].'", QU_choix1 = "'.$question[2].'", QU_choix2 = "'.$question[3].'", QU_choix3 = "'.$question[4].'", QU_choix4 = "'.$question[5].'", QU_correct = "'.$responsesCorrectes.'" WHERE QU_id = '.$_POST['formulaireIdQuestion'].'');
 	// Ajout d'une question
 	else
-		InsertQuery('INSERT INTO QUESTIONS(QU_id, QU_question, QU_photo, QU_choix1, QU_choix2, QU_choix3, QU_choix4, QU_correct, QZ_id) VALUES("", "'.$question[0].'", "'.$question[1].'", "'.$question[2].'", "'.$question[3].'", "'.$question[4].'", "'.$question[5].'", '.$_POST['formulaireCorrect'].',  '.$_GET['id'].')');
+		InsertQuery('INSERT INTO QUESTIONS(QU_id, QU_question, QU_photo, QU_choix1, QU_choix2, QU_choix3, QU_choix4, QU_correct, QZ_id) VALUES("", "'.$question[0].'", "'.$question[1].'", "'.$question[2].'", "'.$question[3].'", "'.$question[4].'", "'.$question[5].'", "'.$responsesCorrectes.'",  '.$_GET['id'].')');
 }
 
 // Récupération du quizz

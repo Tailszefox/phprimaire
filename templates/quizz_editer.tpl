@@ -40,20 +40,13 @@
 	<p class="center">
 	<span class="explication">Entrez les réponses que l'élève pourra choisir. Laissez les autres choix vide pour ajuster le nombre de réponses possibles</span></p>
 	<p class="center">
-	Choix 1 : <input type="text" name="choix1" class="choixQuizz" id="formulaireChoix1"><br />
-	Choix 2 : <input type="text" name="choix2" class="choixQuizz" id="formulaireChoix2"><br />
-	Choix 3 : <input type="text" name="choix3" class="choixQuizz" id="formulaireChoix3"><br />
-	Choix 4 : <input type="text" name="choix4" class="choixQuizz" id="formulaireChoix4"><br />
+	Choix 1 : <input type="text" name="choix1" class="choixQuizz" id="formulaireChoix1"> <input type="checkbox" name="formulaireCorrect[]" class="formulaireCorrect" value="1"><br />
+	Choix 2 : <input type="text" name="choix2" class="choixQuizz" id="formulaireChoix2"> <input type="checkbox" name="formulaireCorrect[]" class="formulaireCorrect" value="2"><br />
+	Choix 3 : <input type="text" name="choix3" class="choixQuizz" id="formulaireChoix3"> <input type="checkbox" name="formulaireCorrect[]" class="formulaireCorrect" value="3"><br />
+	Choix 4 : <input type="text" name="choix4" class="choixQuizz" id="formulaireChoix4"> <input type="checkbox" name="formulaireCorrect[]" class="formulaireCorrect" value="4"><br />
 	</p>
 	
-	<p class="center">Bonne réponse :<br />
-	<select id="formulaireCorrect" name="formulaireCorrect">
-		<option value="1">Choix 1</option>
-		<option value="2">Choix 2</option>
-		<option value="3">Choix 3</option>
-		<option value="4">Choix 4</option>
-	</select>
-	</p>
+	<p class="center">Cochez la case à droite d'une réponse pour indiquer qu'elle est correcte. Vous pouvez cocher plusieurs réponses.</p>
 	
 	<p class="center"><input type="submit" value="Ajouter la question" id="ajouterQuestion" name="ajouterQuestion" class="submit" /></p>
 </form>

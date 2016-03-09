@@ -45,7 +45,7 @@ if($_SESSION['statut'] == 'eleve')
 		foreach($_POST['ids'] as $id)
 		{
 			// Si l'élève a bien répondu a cette question
-			if(isset($_POST['reponse_' . $id]) && intval($_POST['reponse_' . $id]) == $listeBonnesReponses[$id])
+			if(isset($_POST['reponse_' . $id]) && strpos($listeBonnesReponses[$id], strval($_POST['reponse_' . $id])) !== FALSE)
 			{
 				$reponsesCorrectes++;
 			}

@@ -58,15 +58,33 @@ $(document).ready(function(){
 					alert('Les choix 1 et 2 de la question doivent être renseignés');
 					return false;
 				}
+
+				var correctOk = true;
+				var nbCorrect = 0;
+
+				$('.formulaireCorrect').each(function(){
+					var correct = this.value;
+					if(this.checked)
+					{
+						nbCorrect++;
+						if($('#formulaireChoix' + correct).val().trim() == "")
+						{
+							alert('La réponse ' + correct + ' est signalée comme correcte, mais elle n\'a pas été renseignée !');
+							correctOk = false;
+							return false;
+						}
+					}
+				});
 				
-				var correct = $('#formulaireCorrect').val();
-				
-				if($('#formulaireChoix' + correct).val().trim() == "")
+				if(! correctOk)
+					return false;
+
+				if(nbCorrect == 0)
 				{
-					alert('La réponse ' + correct + ' est signalée comme correcte, mais elle n\'a pas été renseignée !');
+					alert('Vous n\'avez pas indiqué de réponse correcte !');
 					return false;
 				}
-				
+
 				return true;
 		});
 		
@@ -98,8 +116,17 @@ $(document).ready(function(){
 				$('#formulaireChoix2').val(choix2);
 				$('#formulaireChoix3').val(choix3);
 				$('#formulaireChoix4').val(choix4);
-				$('#formulaireCorrect').val(correct);
 				$('#formulaireIdQuestion').val(id);
+
+				$(".formulaireCorrect").each(function(){
+					this.checked = false;
+				});
+
+				for(var i = 0; i < correct.length; i++)
+				{
+					var toCheck = correct[i] - 1;
+					$(".formulaireCorrect")[toCheck].checked = true;
+				}
 				
 				// Bouton d'édition
 				$('#ajouterQuestion').val('Éditer la question');
@@ -120,8 +147,11 @@ $(document).ready(function(){
 						$('#formulaireChoix2').val("");
 						$('#formulaireChoix3').val("");
 						$('#formulaireChoix4').val("");
-						$('#formulaireCorrect').val("1");
 						$('#formulaireIdQuestion').val("");
+
+						$(".formulaireCorrect").each(function(){
+							this.checked = false;
+						});
 						
 						$('#ajouterQuestion').val('Ajouter la question');
 						$('#ajouterQuestion').removeClass('boutonEditer');
