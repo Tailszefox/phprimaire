@@ -9,6 +9,12 @@ require('include/include_parametres.php');
 // Fonctions usuelles
 require('include/include_fonctions.php');
 
+if($installed == 1)
+{
+	$s->display('installation_error.tpl');
+	die();
+}
+
 // Tester la connexion à la base
 if(isset($_POST['installationBaseTester']))
 {
